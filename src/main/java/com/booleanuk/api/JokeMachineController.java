@@ -33,7 +33,7 @@ public class JokeMachineController {
 
     @GetMapping
     public String getJoke() {
-        return this.jokes.get(random.nextInt(jokes.size()-1));
+        return this.jokes.get(random.nextInt(jokes.size()));
     }
 
     public List<String> getJokes() {
